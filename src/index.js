@@ -1,13 +1,27 @@
 import validator from './validator.js';
 
-console.log(validator,numCard);
+document.getElementById("buttonverif").addEventListener("click", validar);
+function validar(event) {
+  event.preventDefault()
 
-  document.getElementById("buttonverif").addEventListener("click",validar);
-  function validar(){
+  const numCard = document.getElementById("cardNumber").value;
+  const alert = document.getElementById("resultado");
+
+  const card = validator.isValid(numCard);
+  const masc = validator.maskify(numCard);
+
+  console.log(validator, numCard);
+
+  if (numCard === "") {
+    alert.innerHTML = "Insira o número do cartão";
+  } else if (card === true){
+    alert.innerText = `Cartão ${masc} válido`;
+  } else {
+    alert.innerText = "Cartão Inválido";
 
   }
+}
 
-  const outside = document.getElementById ('out'); id="buttonverif"
 
-//const form = document.querySelector('form');
-//  const cardNumber = document.querySelector('#cardNumber');
+
+
