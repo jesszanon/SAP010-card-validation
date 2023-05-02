@@ -27,7 +27,7 @@ const validator = {
     }
   },
 
-   maskify: function(card){
+  maskify: function(card){
     const x = card.split(''); 
     for (let i=0; i< x.length - 4; i++){
       x[i] = "#";
