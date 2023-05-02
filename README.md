@@ -22,7 +22,7 @@ Foi desenvolvido um aplicativo WEB para validar um cartão de crédito e liberar
 
 Essa questão de poder testar por 7 dias gratuitamente evita a pessoa usar o cartão de crédito e depois ter que estornar, evita a dor de cabeça de ter que ligar para o banco e pedir para cancelar. Nesse formato, a pessoa precisa apenas validar o seu cartão e não precisa se comprometer em deixar seus dados pessoas. E, caso não queira fazer a inscrição após os 7 dias, basta apenas avisar a recepção da academia que a mesma cancela sem dor de cabeça.
 
-### 3. Os objetivos gerais deste projeto são os seguintes
+## 3. Os objetivos gerais deste projeto são os seguintes
 
 * Trabalhar com base em um boilerplate, a estrutura básica de um projeto em diferentes
   pastas (através de módulos em JS).
@@ -45,3 +45,13 @@ seu trabalho atenda aos objetivos principais.
   caracteres.
 * Não deve poder inserir um campo vazio.
 
+## 5. Imagens do site pronto
+
+![Primeira foto mostrando para inserir o número do cartão.](Insira%20numero%20do%20cart%C3%A3o.jpg)
+
+![Segunda imagem mostrando o texto de cartão inválido.](Cart%C3%A3o%20inv%C3%A1lido.jpg)
+
+![Terceira imagem mostrando o cartão válido com a máscara, deixando apenas os 4 últimos dígitos.](Cart%C3%A3o%20v%C3%A1lido%20com%20m%C3%A1scara.jpg)
+
+## 6. Link do meu projeto no Git Pages
+https://jesszanon.github.io/SAP010-card-validation/
