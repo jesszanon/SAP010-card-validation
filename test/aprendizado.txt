@@ -1,0 +1,50 @@
+O que são módulos no JS?
+São códigos que fornecem funcionalidades específicas e
+ nós conseguimos importar e exportar de outras pastas 
+ (É uma forma de compartilhar informações entre arquivos).
+
+ O que é uma const?
+ Uma const pode ser usada para declarar variáveis ​​com valores que 
+ são computados no momento da execução. Ou pode ser usada para valores imutáveis.
+
+ o que são array?
+Um array é uma estrutura de dados no JavaScript que armazena uma lista de 
+elementos ordenados. Os elementos de um array podem ser de qualquer tipo, 
+incluindo números, strings, objetos e outros arrays. Os arrays são indexados 
+por um número inteiro, começando com 0. Eles são usados ​​para armazenar e 
+acessar dados de forma eficiente.
+
+Explicação do meu isValid:
+isValid: function (card) {
+    const nCard = card.split("").reverse();
+    let rescard = 0; [Primeiro, o número de cartão é dividido em um array de caracteres e invertido.]
+
+    for (let i = 0; i < nCard.length; i++) { [Então, um loop é usado para iterar sobre os elementos do array. ]
+      const numCard = parseInt(nCard[i]);
+
+      if (i % 2 !== 0 && numCard >= 5) { [Se o caractere atual é um índice ímpar e o número é maior ou igual a 5, 
+        rescard = rescard + (numCard * 2) - 9; o número é multiplicado por 2 e subtraído por 9] 
+      }
+
+      else if (i % 2 !== 0 && numCard < 5) { [(se for menor que 5, é apenas multiplicado por 2).]
+        rescard = rescard + (numCard * 2); 
+      }
+
+      else {
+        rescard = rescard + numCard; [Se o índice é par, o número é apenas somado. ]
+      }
+    }
+    if (rescard % 10 === 0) { [ a soma dos números é calculada e, se for divisível por 10, 
+      return true;              a função retorna true (o cartão é válido)]
+    }
+    else {
+      return false; [Se não, a função retorna false (o cartão é inválido).]
+    }
+}
+
+    Explicação do meu Maskify:
+    Primeiro, ele separa o número de cartão em dígitos individuais usando o método split.
+     Em seguida, um loop for é usado para percorrer os elementos do array x, 
+     exceto os últimos 4, e atribuir o caractere # para cada elemento.
+    Por último, o método join é usado para juntar os elementos do array
+    em uma string e retornar a string resultante.
