@@ -48,3 +48,9 @@ isValid: function (card) {
      exceto os últimos 4, e atribuir o caractere # para cada elemento.
     Por último, o método join é usado para juntar os elementos do array
     em uma string e retornar a string resultante.
+
+    Explicação da const card = validator.isValid(numCard); :
+    Essa linha de código usa a função isValid() da variável validator para verificar se 
+    o número de cartão armazenado na variável numCard é válido. Se o cartão for válido, 
+    a função retorna true e armazena o valor na variável card. Se o cartão for inválido, 
+    a função retorna false e armazena o valor na variável card.
